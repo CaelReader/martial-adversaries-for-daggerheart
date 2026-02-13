@@ -1,9 +1,9 @@
 {
   "id": "martial-adversaries-for-daggerheart",
   "title": "Martial Adversaries (for Daggerheart)",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "manifest": "https://github.com/CaelReader/martial-adversaries-for-daggerheart/releases/latest/download/module.json",
-  "download": "https://github.com/CaelReader/martial-adversaries-for-daggerheart/releases/download/1.1.0/module.zip",
+  "download": "https://github.com/CaelReader/martial-adversaries-for-daggerheart/releases/download/1.2.0/module.zip",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
@@ -17,8 +17,8 @@
       "flags": {}
     }
   ],
+  "url": "https://github.com/CaelReader/martial-adversaries-for-daggerheart",
   "flags": {
-    "canUpload": true
   },
   "packs": [
     {
@@ -27,11 +27,20 @@
       "path": "packs/martial-adversaries",
       "type": "Actor",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "system": "daggerheart",
+      "banner": "modules/martial-adversaries-for-daggerheart/images/martialadversaries-foundry-thumb.webp", 
       "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+        "name": "Adversary Variety Pack",
+        "sorting": "a",
+        "color": "#482C31",
+        "packs": ["undead-adversaries"]
     }
   ],
   "relationships": {
@@ -39,8 +48,15 @@
       {
         "id": "daggerheart",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {
+          "minimum": "1.7.0"
+        }
       }
     ]
-  }
+  },
+  "media": [{
+    "type": "setup",
+    "url": "modules/martial-adversaries-for-daggerheart/images/martialadversaries-foundry-thumb.webp",
+    "thumbnail": "modules/martial-adversaries-for-daggerheart/images/martialadversaries-foundry-thumb.webp"
+  }]
 }
